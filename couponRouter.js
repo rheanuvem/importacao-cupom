@@ -8,10 +8,10 @@ const { parse, format, isValid } = require("date-fns");
 
 const storeId = "";
 const authenticationToken = "";
-const appId = "massCupom";
+const appId = "appName";
 
 // Source Directory for XLSX Files
-const sourceXlsxDir = path.join(__dirname, "sourceXLSX");
+const sourceXlsxDir = path.join(__dirname, "source");
 
 // Default values for coupon fields
 const defaultValues = {
@@ -36,7 +36,7 @@ const headersTranslation = {
   max_uses: "",
   min_price: "",
   categories: "",
-  start_date: "EmissionDate",
+  start_date: "",
   end_date: "ExpirationDate",
 };
 
@@ -47,7 +47,7 @@ const typeTranslation = {
 };
 
 // Coupon Creation Limit for Testing
-const couponLimiter = 2000; // Set to 0 for no limit
+const couponLimiter = 1000; // Set to 0 for no limit
 
 // Date format from XLS files
 const inputDateFormat = "M/d/yy";
